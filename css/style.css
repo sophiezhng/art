@@ -12,6 +12,11 @@ body {
     padding: 24px;
 }
 
+body > *:not(.row, .modal, header) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 footer {
     margin-top: 24px;
     font-size: 14px;
@@ -56,6 +61,10 @@ a:hover {
 
 .right > a {
     padding-right: 20px;
+}
+
+.year {
+    margin-top: 40px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
