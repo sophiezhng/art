@@ -1,2 +1,2 @@
 # art
-Art
+A personal art gallery
