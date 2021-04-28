@@ -17,6 +17,10 @@ body > *:not(.row, .modal, header) {
     margin-right: 20px;
 }
 
+header {
+    margin-bottom: 50px;
+}
+
 footer {
     margin-top: 24px;
     font-size: 14px;
@@ -184,4 +188,4 @@ a:hover {
         height: auto;
         width: 90%;
     }
-  }
+}
