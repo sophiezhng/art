@@ -32,7 +32,7 @@ span.onclick = function() {
 
 prev.onclick = function() {
   num--;
-  if (num <= 0) {
+  if (num < 0) {
     num = images.length - 1;
   }
   var img = images[num];
@@ -42,7 +42,7 @@ prev.onclick = function() {
 
 next.onclick = function() {
   num++;
-  if (num >= images.length - 1) {
+  if (num >= images.length) {
     num = 0;
   }
   var img = images[num];
