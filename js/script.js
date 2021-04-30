@@ -12,9 +12,10 @@ var num = 0;
 // Go through all of the images with our custom class
 for (var i = 0; i < images.length; i++) {
   var img = images[i];
+  images[i].setAttribute("index-data", i);
   // and attach our click listener for this image.
   img.onclick = function(evt) {
-    num = i;
+    num = this.getAttribute("index-data");
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
