@@ -7,6 +7,10 @@ var modalImg = document.getElementById("img01");
 // and the caption in the modal
 var captionText = document.getElementById("caption");
 
+var span = document.getElementsByClassName("close")[0];
+var prev = document.getElementsByClassName("prev")[0];
+var next = document.getElementsByClassName("next")[0];
+
 var num = 0;
 
 // Go through all of the images with our custom class
@@ -17,14 +21,16 @@ for (var i = 0; i < images.length; i++) {
   img.onclick = function(evt) {
     num = this.getAttribute("index-data");
     modal.style.display = "block";
+    if (images.length < 2) {
+      prev.style.display = "none";
+      next.style.display = "none";
+    }
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
   }
 }
 
-var span = document.getElementsByClassName("close")[0];
-var prev = document.getElementsByClassName("prev")[0];
-var next = document.getElementsByClassName("next")[0];
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
