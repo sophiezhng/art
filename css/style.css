@@ -89,22 +89,18 @@ a:hover {
     margin-inline-start: var(--gap);
 }
 
-.year {
-    margin-top: 40px;
-}
-
 .logo{
   text-decoration: none !important;
 }
 
-#socials {
+#socials, #title-list {
   list-style-type: none;
   margin: 36px 0px 36px;
   display: flex;
   padding-inline-start: 0px;
 }
 
-#socials > li {
+#socials > li, #title-list > li {
   margin-inline-end: 18px;
 }
 
