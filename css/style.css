@@ -77,7 +77,6 @@ a:hover {
 
 .right {
     float: right;
-    list-style: none;
     list-style-type: none;
     word-break: keep-all;
     overflow-x: auto;
@@ -96,12 +95,17 @@ a:hover {
 
 .logo{
   text-decoration: none !important;
-  padding: 0px 6px 0px;
 }
 
 #socials {
+  list-style-type: none;
   margin: 36px 0px 36px;
 }
+
+#socials > a {
+  margin-inline-start: 16px;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     .column {
