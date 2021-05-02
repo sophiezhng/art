@@ -94,6 +94,14 @@ a:hover {
     margin-top: 40px;
 }
 
+.logo{
+  text-decoration: none !important;
+  padding: 0px 6px 0px;
+}
+
+#socials {
+  margin: 36px 0px 36px;
+}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     .column {
