@@ -78,6 +78,7 @@ a:hover {
 .right {
     float: right;
     list-style: none;
+    list-style-type: none;
     word-break: keep-all;
     overflow-x: auto;
     white-space: nowrap;
