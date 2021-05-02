@@ -100,10 +100,12 @@ a:hover {
 #socials {
   list-style-type: none;
   margin: 36px 0px 36px;
+  display: flex;
+  padding-inline-start: 0px;
 }
 
-#socials > a {
-  margin-inline-start: 16px;
+#socials > li {
+  margin-inline-end: 18px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
