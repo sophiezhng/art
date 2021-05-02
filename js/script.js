@@ -98,8 +98,7 @@ function hashImage(loc) {
 if(window.location.hash) {
   hashImage(window.location.hash);
 }
-/* If I want # to work without refresh
+
 window.addEventListener('hashchange', function() {
   hashImage(window.location.hash);
 });
-*/
