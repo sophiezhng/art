@@ -80,25 +80,3 @@ function toggleTheme() {
     document.getElementById('slider').checked = true;
   }
 })();
-
-function hashImage(loc) {
-  img = document.getElementById(loc.substring(1));
-  if(img.nodeName == "IMG") {
-    num = img.getAttribute("index-data");
-    modal.style.display = "block";
-    if (images.length < 2) {
-      prev.style.display = "none";
-      next.style.display = "none";
-    }
-    modalImg.src = img.src;
-    captionText.innerHTML = img.alt;
-  }
-}
-
-if(window.location.hash) {
-  hashImage(window.location.hash);
-}
-
-window.addEventListener('hashchange', function() {
-  hashImage(window.location.hash);
-});
