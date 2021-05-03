@@ -118,7 +118,7 @@ a:hover {
   padding: 1px 2px 1px;
 }
 
-.links > li a.active {
+.links > li a[href=""] {
   background: #a7e6bb70;
 }
 
