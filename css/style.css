@@ -114,18 +114,23 @@ a:hover {
 
 .links > li a {
   color: var(--text-color);
+  font-weight: normal;
   text-decoration: none;
-  padding: 1px 2px 1px;
+  padding: 1px 4px 1px;
 }
 
 .links > li a[href=""] {
-  background: #a7e6bb70;
+  background: #9bfa9b90;
 }
 
-.links > li a:hover:not(.active) {
-  background: #aedee670;
+.links > li a:hover:not(a[href=""]) {
+  background: #f9f34b90;
 }
 
+.links > li a{
+  text-transform: lowercase;
+  font-size: 16px;
+}
 
 .logo{
   text-decoration: none !important;
