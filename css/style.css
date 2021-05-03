@@ -20,18 +20,18 @@ body {
        -moz-animation: fadein 4s; /* Firefox < 16 */
         -ms-animation: fadein 4s; /* Internet Explorer */
             animation: fadein 4s;
-    padding: 24px;
+    padding: 20px;
     color: var(--text-color);
     background-color: var(--bkg-color);
 }
 
 header {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+  padding: 20px 0px;
 }
 
 footer {
-    margin-top: 24px;
-    margin: 0 20px;
+    margin-top: 50px;
     font-size: 14px;
     display: block;
 }
@@ -39,7 +39,7 @@ footer {
 #fixed-footer {
   position: absolute;
   bottom:0;
-  width:90%;
+  width:70%;
   box-sizing: border-box;
   height:60px;   /* Height of the footer */
 }
@@ -76,18 +76,56 @@ a:hover {
 }
 
 .right {
-    float: right;
-    list-style-type: none;
-    word-break: keep-all;
-    overflow-x: auto;
-    white-space: nowrap;
-    display: flex;
-    margin-top: 0px;
+  float: right;
+  list-style-type: none;
+  word-break: keep-all;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  margin-top: 0px;
+  margin-right: 25px;
 }
 
 .right > li {
     margin-inline-start: var(--gap);
 }
+
+.navigation {
+  margin: 0;
+  width: 22%;
+  height: 70%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.wrapper{
+  margin-left:25% !important;padding:1px 16px;
+}
+
+.links {
+  /*background-color: #bbb;*/
+  list-style-type: none;
+  padding: 0;
+}
+
+.links > li {
+  padding: 8px 16px;
+}
+
+.links > li a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 1px 2px 1px;
+}
+
+.links > li a.active {
+  background: #a7e6bb70;
+}
+
+.links > li a:hover:not(.active) {
+  background: #aedee670;
+}
+
 
 .logo{
   text-decoration: none !important;
@@ -105,18 +143,25 @@ a:hover {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .column {
         flex: 50%;
         max-width: 50%;
     }
+    body {
+      padding: 10px;
+    }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .column {
         flex: 100%;
         max-width: 100%;
+    }
+    body {
+      padding: 0px;
+      margin: 2px;
     }
 }
 
@@ -342,7 +387,7 @@ input:checked + .slider:before {
 
 #left-side {
   float: left;
-  width: 400px;
+  width: 300px;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -352,13 +397,6 @@ input:checked + .slider:before {
   display:block;
   width: 500px;
   box-sizing: border-box;
-}
-
-.wrapper {
-  display:block;
-  width:1000px;
-  margin: 0 auto;
-  padding-bottom: 10px;
 }
 
 /* Adjust to work on all screens */
