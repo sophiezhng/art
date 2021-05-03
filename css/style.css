@@ -119,11 +119,11 @@ a:hover {
   padding: 1px 4px 1px;
 }
 
-.links > li a:active {
+.highlighted{
   background: #9bfa9b90;
 }
 
-.links > li a:hover:not(:active) {
+.links > li a:hover {
   background: #f9f34b90;
 }
 
