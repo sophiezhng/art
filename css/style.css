@@ -123,7 +123,7 @@ a:hover {
   background: #9bfa9b90;
 }
 
-.links > li a:hover {
+.links > li a:hover:not(.highlighted) {
   background: #f9f34b90;
 }
 
