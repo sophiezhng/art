@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon - Generic -->
-    <link rel="icon" href="images/1.jpeg" type="image/jpeg">
+    <link rel="icon" href="../images/1.jpeg" type="image/jpeg">
     <!-- Favicon - Chrome/Android -->
-    <link rel="shortcut icon" href="images/1.jpeg" type="image/jpeg">
+    <link rel="shortcut icon" href="../images/1.jpeg" type="image/jpeg">
     <!-- Favicon - Safari/iOS -->
-    <link rel="apple-touch-icon" href="images/1.jpeg">
+    <link rel="apple-touch-icon" href="../images/1.jpeg">
 
     <meta property="og:title" content="my art | sophie zhang" />
     <meta property="og:locale" content="en_US" />
@@ -22,9 +22,9 @@
     <meta name="twitter:card" content="Paintings, sketches, and more by Sophie Zhang" />
     <meta property="twitter:title" content="my art | sophie zhang" />
 
-    <title>my art | sophie zhang</title>
+    <title>gouache and watercolor - my art | sophie zhang</title>
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet"
       href='https://fonts.googleapis.com/css?family=Roboto'>
@@ -43,33 +43,35 @@
   <body>
     <div class="navigation">
         <ul class="links">
-          <li><a class ="highlighted" href="/art">Home</a></li>
+          <li><a href="/art">Home</a></li>
           <li><a href="/art/about">About</a></li>
           <li><a href="/art/fractals">Fractals</a></li>
-          <li><a href="/art/gouache-and-watercolor">Gouache and Watercolor</a></li>
+          <li><a class ="highlighted" href="/art/gouache-and-watercolor">Gouache and Watercolor</a></li>
           <li><a href="/art/faces-collection">The Faces Collection</a></li>
           <p class="nav-header">Archives</p>
           <li><a href="/art/2020-archive">2020</a></li>
         </ul>
     </div>
     <div class="wrapper">
-      <ul id="title-list">
-        <li><h1 id="my-art" style="display: inline;">
-          my art | sophie zhang</h1></li>
-        <li><a href="index.xml" class="logo"><svg style="padding-top: 6px;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
-        </a></li>
-      </ul>
-      <p>
-        some of the pieces i have made over the years.
+      <h1>gouache and watercolor</h1>
+      <p style="text-indent: 25px;">
       </p>
-      <h2>recent</h2>
-      <img id="delicate" class="myImages" src="images/20.jpg" alt="<i>delicate</i>, 2021, Watercolor and ink on paper" width="30%">
-      <img id="faces-i" class="myImages" src="images/12.jpg" alt="<i>faces I</i>, 2020, Pencil crayon on paper" width="30%" style="display: none;">
-      <img id="in-our-hands" class="myImages" src="images/0.jpeg" alt="<i>In Our Hands</i>, 2020, Oil on canvas" width="30%" style="display: none;">
-      <img id="lighthouse" class="myImages" src="images/6.jpeg" alt="<i>lighthouse</i>, 2020, Gouache on paper" width="30%" style="display: none;">
-      <img id="sunset" class="myImages" src="images/5.jpeg" alt="<i>sunset</i>, 2020, Gouache on paper" width="30%" style="display: none;">
-      <img id="fruit-basket" class="myImages" src="images/19.jpg" alt="<i>october fruit basket</i>, 2020, Gouache on paper" width="30%" style="display: none;">
-
+      <div class="row">
+        <div class="column">
+          <img id="fruit-basket" class="myImages" src="../images/19.jpg" alt="<i>october fruit basket</i>, 2020, Gouache on paper" width="100px">
+          <img id="koi-fish" class="myImages" src="../images/3.jpeg" alt="<i>koi fish</i>, 2020, Gouache on paper" width="100px">
+        </div>
+        <div class="column">
+          <img id="lighthouse" class="myImages" src="../images/6.jpeg" alt="<i>lighthouse</i>, 2020, Gouache on paper" width="100px">
+          <img id="relaxed" class="myImages" src="../images/14.jpg" alt="<i>relaxed</i>, 2021, Watercolor and graphite on paper" width="100px">
+        </div>
+        <div class="column">
+          <img id="sunset" class="myImages" src="../images/5.jpeg" alt="<i>sunset</i>, 2020, Gouache on paper" width="100px">
+        </div>
+        <div class="column">
+          <img id="delicate" class="myImages" src="../images/20.jpg" alt="<i>delicate</i>, 2021, Watercolor and ink on paper" width="100px">
+        </div>
+      </div>
       <footer>
         <p>© 2020-2021 Sophie Zhang
           <a href="https://github.com/sophiezhng/art" style="float: right;">View on GitHub</a>
@@ -84,6 +86,6 @@
       <div id="caption"></div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
