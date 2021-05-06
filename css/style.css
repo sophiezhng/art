@@ -135,7 +135,7 @@ a:hover {
 }
 
 .links > li a:active {
-  background: #333333;
+  background: #333333 !important;
   color: white
 }
 
