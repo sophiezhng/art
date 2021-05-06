@@ -42,6 +42,7 @@ span.onclick = function() {
 }
 
 prev.onclick = function() {
+  modalImg.style.display = "none";
   num--;
   if (num < 0) {
     num = images.length - 1;
@@ -54,10 +55,12 @@ prev.onclick = function() {
   else {
     modalImg.src = img.src;
   }
+  modalImg.style.display = "block";
   captionText.innerHTML = img.alt;
 }
 
 next.onclick = function() {
+  modalImg.style.display = "none";
   num++;
   if (num >= images.length) {
     num = 0;
@@ -70,6 +73,7 @@ next.onclick = function() {
   else {
     modalImg.src = img.src;
   }
+  modalImg.style.display = "block";
   captionText.innerHTML = img.alt;
 }
 
