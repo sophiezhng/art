@@ -25,7 +25,13 @@ for (var i = 0; i < images.length; i++) {
       prev.style.display = "none";
       next.style.display = "none";
     }
-    modalImg.src = this.src;
+    dataSrc = this.getAttribute("data-src");
+    if (dataSrc!=null) {
+      modalImg.src = dataSrc;
+    }
+    else {
+      modalImg.src = this.src;
+    }
     captionText.innerHTML = this.alt;
   }
 }
@@ -41,7 +47,13 @@ prev.onclick = function() {
     num = images.length - 1;
   }
   var img = images[num];
-  modalImg.src = img.src;
+  dataSrc = img.getAttribute("data-src");
+  if (dataSrc!=null) {
+    modalImg.src = dataSrc;
+  }
+  else {
+    modalImg.src = img.src;
+  }
   captionText.innerHTML = img.alt;
 }
 
@@ -51,7 +63,13 @@ next.onclick = function() {
     num = 0;
   }
   var img = images[num];
-  modalImg.src = img.src;
+  dataSrc = img.getAttribute("data-src");
+  if (dataSrc!=null) {
+    modalImg.src = dataSrc;
+  }
+  else {
+    modalImg.src = img.src;
+  }
   captionText.innerHTML = img.alt;
 }
 
