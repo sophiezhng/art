@@ -72,7 +72,7 @@ a{
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .right {
@@ -132,6 +132,11 @@ a:hover {
 
 .links > li a:hover:not(.highlighted) {
   background: #f9f34b90;
+}
+
+.links > li a:active {
+  background: #333333;
+  color: white
 }
 
 .links > li a{
