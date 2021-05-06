@@ -6,6 +6,7 @@ var images = document.getElementsByClassName('myImages');
 var modalImg = document.getElementById("img01");
 // and the caption in the modal
 var captionText = document.getElementById("caption");
+var dataSrc;
 
 var span = document.getElementsByClassName("close")[0];
 var prev = document.getElementsByClassName("prev")[0];
@@ -42,38 +43,30 @@ span.onclick = function() {
 }
 
 prev.onclick = function() {
-  modalImg.style.display = "none";
   num--;
   if (num < 0) {
     num = images.length - 1;
   }
   var img = images[num];
   dataSrc = img.getAttribute("data-src");
+  modalImg.src = img.src;
   if (dataSrc!=null) {
     modalImg.src = dataSrc;
   }
-  else {
-    modalImg.src = img.src;
-  }
-  modalImg.style.display = "block";
   captionText.innerHTML = img.alt;
 }
 
 next.onclick = function() {
-  modalImg.style.display = "none";
   num++;
   if (num >= images.length) {
     num = 0;
   }
   var img = images[num];
   dataSrc = img.getAttribute("data-src");
+  modalImg.src = img.src;
   if (dataSrc!=null) {
     modalImg.src = dataSrc;
   }
-  else {
-    modalImg.src = img.src;
-  }
-  modalImg.style.display = "block";
   captionText.innerHTML = img.alt;
 }
 
