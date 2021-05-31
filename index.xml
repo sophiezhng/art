@@ -8,10 +8,10 @@
       type="application/rss+xml"/>
     <item>
       <title>About</title>
-      <link>https://sophiezhng.github.io/art/about/</link>
-      <pubDate>Sun, 2 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://sophiezhng.github.io/art/about/</guid>
-      <description>About the artist :)</description>
+      <link>https://sophiezhng.github.io/art/2021-archive/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://sophiezhng.github.io/art/2021-archive/</guid>
+      <description>Art dump of the 2021 year, in progress</description>
     </item>
   </channel>
 </rss>

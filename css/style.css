@@ -5,12 +5,18 @@
 
 .dark-theme {
   --text-color: #eee;
+  --light-text-color: rgb(128, 145, 155);
   --bkg-color: #152028;
+  --post-link-color: #fff;
+  --post-bkg-color: #333333;
 }
 
 .light-theme {
   --text-color: #222;
+  --light-text-color: rgb(77, 86, 94);
   --bkg-color: #fff;
+  --post-link-color: #333333;
+  --post-bkg-color: #fff;
 }
 
 body {
@@ -90,14 +96,6 @@ a:hover {
     margin-inline-start: var(--gap);
 }
 
-.navigation {
-  margin: 0;
-  width: 22%;
-  height: 70%; /* Full height */
-  position: fixed; /* Make it stick, even on scroll */
-  overflow: auto; /* Enable scrolling if the sidenav has too much content */
-}
-
 .nav-header {
   padding: 0px 12px;
   font-weight:bold;
@@ -106,7 +104,8 @@ a:hover {
 }
 
 .wrapper{
-  margin-left:25% !important;padding:1px 16px;
+  width:860px;
+  margin:0 auto;
 }
 
 .links {
@@ -117,6 +116,12 @@ a:hover {
 
 .links > li {
   padding: 8px 16px;
+  font-size: 16px;
+  
+}
+
+.links > li:not(a) {
+  color: var(--light-text-color);
 }
 
 .links > li a {
@@ -134,14 +139,13 @@ a:hover {
   background: #f9f34b90;
 }
 
-.links > li a:active {
-  background: #333333 !important;
-  color: white
+.links > li a:active,  .links > li a:hover.highlighted{
+  background: var(--post-link-color) !important;
+  color: var(--post-bkg-color) !important;
 }
 
 .links > li a{
   text-transform: lowercase;
-  font-size: 16px;
 }
 
 .logo{
@@ -402,45 +406,11 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-#left-side {
-  float: left;
-  width: 30%;
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-
-#right-side {
-  float: right;
-  display:block;
-  width: 50%;
-  margin-right: 8%;
-  box-sizing: border-box;
-}
-
 /* Adjust to work on all screens */
 @media print, screen and (max-width: 1000px){
   
   div.wrapper{
     width:auto;
-    margin: 0 20px;
-  }
-
-  #left-side, #right-side, #fixed-footer{
-    float:none;position:static;width:auto;
-  }
-
-  #right-side {
-    margin-right: 0;
-  }
-
-  #left-side {
-    text-align: center;
-    width: 66%;
-  }
-
-  section{
-    border:1px solid #e5e5e5;border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
+    margin: 0 25px;
   }
 }
