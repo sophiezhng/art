@@ -42,14 +42,6 @@ footer {
     display: block;
 }
 
-#fixed-footer {
-  position: absolute;
-  bottom:0;
-  width:70%;
-  box-sizing: border-box;
-  height:60px;   /* Height of the footer */
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -113,6 +105,7 @@ a:hover {
   list-style-type: none;
   padding: 0;
   border-left: 6px solid var(--light-text-color);
+  font-weight: bold;
 }
 
 .links > li {
@@ -126,7 +119,6 @@ a:hover {
 
 .links > li a {
   color: var(--text-color);
-  font-weight: normal;
   text-decoration: none;
   padding: 1px 4px 1px;
 }
