@@ -157,7 +157,7 @@ a:hover {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .column {
         flex: 50%;
         max-width: 50%;
@@ -168,7 +168,7 @@ a:hover {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .column {
         flex: 100%;
         max-width: 100%;
@@ -406,4 +406,66 @@ input:checked + .slider:before {
     width:auto;
     margin: 0 25px;
   }
+}
+
+input[type=text] {
+  max-width: 1000px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+/* Contact form css */
+input[type=text] {
+  padding: 8px 14px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  padding: 14px 14px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=text]:focus, textarea:focus {
+  outline-color: var(--light-text-color);
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: var(--bkg-color);
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  padding: 12px 24px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+  background-color: var(--text-color);
+  border: 1px solid var(--text-color);
+  color: var(--bkg-color);
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active {
+  background-color: var(--light-text-color);
+  border: 1px solid var(--text-color);
+  color: var(--bkg-color);
+}
+
+.contact-form > p {
+  margin-bottom: 2px;
+}
+
+.contact-form > p::after {
+  content: " *";
+}
+
+.form-section {
+  margin-top: 0px;
+  padding: 16px 32px;
+  border-left: 6px solid var(--light-text-color);
 }
