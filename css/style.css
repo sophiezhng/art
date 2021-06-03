@@ -5,7 +5,7 @@
 
 .dark-theme {
   --text-color: #eee;
-  --light-text-color: rgb(128, 145, 155);
+  --light-text-color: rgb(173, 187, 194);
   --bkg-color: #152028;
   --post-link-color: #fff;
   --post-bkg-color: #333333;
@@ -125,11 +125,11 @@ a:hover {
 }
 
 .highlighted{
-  background: #9bfa9b90;
+  background: #7bf77b40;
 }
 
 .links > li a:hover:not(.highlighted) {
-  background: #f9f34b90;
+  background: #f7ef0a40;
 }
 
 .links > li a:active,  .links > li a:hover.highlighted{
