@@ -409,7 +409,7 @@ input:checked + .slider:before {
 }
 
 /* Contact form css */
-input[type=text] {
+input[type=text], input[type=email] {
   max-width: 1000px;
   padding: 8px 14px;
   margin: 8px 0;
@@ -425,7 +425,7 @@ textarea {
   font-family: 'Roboto', sans-serif;
 }
 
-input[type=text]:focus, textarea:focus {
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
   outline-color: var(--light-text-color);
 }
 
