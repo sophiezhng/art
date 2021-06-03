@@ -451,15 +451,6 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active {
   color: var(--bkg-color);
 }
 
-.contact-form > p {
-  margin-bottom: 2px;
-}
-
-.contact-form > p::after {
-  content: " *";
-  color: var(--light-text-color);
-}
-
 .form-section {
   margin-top: 0px;
   padding: 16px 32px;
