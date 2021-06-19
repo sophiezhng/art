@@ -1,4 +1,4 @@
-baseURL: "https://sophiezhng.github.io/art/blog"
+baseURL: "https://sophiezhng.github.io/art/blog/"
 title: Sophie Zhang
 paginate: 5
 theme: PaperMod
