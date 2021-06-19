@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Sophie Zhang</title>
+    <link>https://sophiezhng.github.io/art/blog/tags/</link>
+    <description>Recent content in Tags on Sophie Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 16 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sophiezhng.github.io/art/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>books</title>
+      <link>https://sophiezhng.github.io/art/blog/tags/books/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sophiezhng.github.io/art/blog/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>productivity</title>
+      <link>https://sophiezhng.github.io/art/blog/tags/productivity/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sophiezhng.github.io/art/blog/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reading</title>
+      <link>https://sophiezhng.github.io/art/blog/tags/reading/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sophiezhng.github.io/art/blog/tags/reading/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
