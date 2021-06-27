@@ -105,15 +105,13 @@ a:hover {
   /*background-color: #bbb;*/
   list-style-type: none;
   padding: 0;
+  border-left: 6px solid var(--light-text-color);
   font-weight: bold;
-  display: flex;
-  margin: 0 auto;
 }
 
 .links > li {
   padding: 10px 16px;
-  flex-wrap: wrap;
-  width: min-content;
+  font-size: 16px;
 }
 
 .links > li:not(a) {
@@ -123,19 +121,24 @@ a:hover {
 .links > li a {
   color: var(--text-color);
   text-decoration: none;
-  border: 2px solid var(--light-text-color);
-  padding: 10px 20px 10px;
-  border-radius: 10px;
+  padding: 1px 4px 1px;
+}
+
+.highlighted{
+  background: #7bf77b40;
 }
 
 .links > li a:hover:not(.highlighted) {
-  background: var(--light-text-color);
-  color: var(--bkg-color);
+  background: #f7ef0a40;
 }
 
 .links > li a:active,  .links > li a:hover.highlighted{
   background: var(--post-link-color) !important;
   color: var(--post-bkg-color) !important;
+}
+
+.links > li a{
+  text-transform: lowercase;
 }
 
 .logo{
@@ -405,6 +408,51 @@ input:checked + .slider:before {
   }
 }
 
-.buttons {
-  display: flex;
+/* Contact form css */
+input[type=text], input[type=email] {
+  max-width: 1000px;
+  padding: 8px 14px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 14px 14px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  outline-color: var(--light-text-color);
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: var(--bkg-color);
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  padding: 12px 24px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+  background-color: var(--text-color);
+  border: 1px solid var(--text-color);
+  color: var(--bkg-color);
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active {
+  background-color: var(--light-text-color);
+  border: 1px solid var(--text-color);
+  color: var(--bkg-color);
+}
+
+.form-section {
+  margin-top: 0px;
+  padding: 16px 32px;
+  border-left: 6px solid var(--light-text-color);
 }
