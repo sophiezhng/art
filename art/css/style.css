@@ -412,6 +412,9 @@ input:checked + .slider:before {
     width:auto;
     margin: 0 25px;
   }
+  header{
+    margin-left: 16px;
+  }
 }
 
 /* Contact form css */
