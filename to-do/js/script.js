@@ -2,7 +2,7 @@ var inputBox;
 
 function addItem(item) {
 	
-	$('#input').before('<div class="me-want to-do panel-body"><span class="glyphicon glyphicon-minus" aria-hidden="true" /> ' + item + '</div>');
+	$('#input').before('<div class="me-want to-do panel-body"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true" /> ' + item + '</div>');
 	
 	var it = $('.me-want');
 	it.fadeOut(0);
@@ -64,7 +64,7 @@ function remove(element) {
 	
 	item.find('span').removeClass("glyphicon-trash");
 	item.find('span').removeClass("text-warning");
-	item.find('span').addClass("glyphicon-ok");
+	item.find('span').addClass("glyphicon-heart");
 	item.fadeOut(1000, function() {
 		item.remove();
 		saveList();
@@ -77,8 +77,8 @@ function clear() {
 	var items = $('.to-do');
 	var glyph = items.find('span');
 	
-	glyph.removeClass('glyphicon-minus');
-	glyph.addClass('glyphicon-ok');
+	glyph.removeClass('glyphicon-heart-empty');
+	glyph.addClass('glyphicon-heart');
 	items.fadeOut(1000, function() {
 		items.remove();
 		saveList();
@@ -90,10 +90,10 @@ function addRemoveIcon() {
 	
 	var glyph =$(this).find('span');
 	
-	if (glyph.hasClass('glyphicon-ok'))
+	if (glyph.hasClass('glyphicon-heart'))
 		return;
 	
-	glyph.toggleClass('glyphicon-minus');
+	glyph.toggleClass('glyphicon-heart-empty');
 	glyph.toggleClass('glyphicon-trash');
 	glyph.toggleClass('text-warning');
 	
