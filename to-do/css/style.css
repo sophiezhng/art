@@ -1,3 +1,6 @@
+* {
+    font-family: monospace, Arial, Helvetica, sans-serif;
+}
 .container { margin-top: 64px;
     }
 body {
@@ -35,4 +38,21 @@ body {
 }
 .panel-body {
     padding: 10px 50px !important;
+}
+
+#lollipop {
+    background: url(https://i.ibb.co/F6Xx77z/f2845d2875328f409c79b93b3c324ee8.gif) no-repeat;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: #ffffff00;
+    background-size: 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+    box-shadow: none;
+    filter: drop-shadow(8px 9px 15px #00000044);
+    z-index: 1000;
+    font-size: 0px;
+    opacity: 1;
 }

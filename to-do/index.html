@@ -18,9 +18,10 @@
 </div>
 		<div class="container">
 		<span class="panel-title text-center"><b>to-do list</b></span>
+		<div style="float: right;"><span id="time"> </span></div>
 			<div id="list" class="panel panel-default">
 				<div id="title" class="panel-heading">
-					<h1 class="panel-title text-center">&nbsp;</h1>
+					<h1 class="panel-title text-center">p r o d u c t i v i t y &nbsp; c o r n e r</h1>
 				</div>
 				<div id="input" class="panel-body">
 					<div class="input-group">
@@ -36,6 +37,16 @@
 					<span class="glyphicon glyphicon-exclamation-sign"></span> Javascript isn't working correctly on your computer! The To-Do List cannot function properly!
 				</div>
 			</div>
+	<div><a href="https://calendar.google.com/calendar/u/0/r" id="lollipop">Calendar</a></div>
 	</body>
 	<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat993.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/12/29/heart-chat-bubble.html" target="_blank" title="Heart Chat Bubble"><img src="https://cur.cursors-4u.net/cursor.png" alt="Heart Chat Bubble" style="position:absolute; top: 0px; right: 0px;" /></a>
+	<script>
+		function refreshTime() {
+		const timeDisplay = document.getElementById("time");
+		const dateString = new Date().toLocaleString();
+		const formattedString = dateString.replace(", ", " - ");
+		timeDisplay.textContent = formattedString;
+		}
+		setInterval(refreshTime, 1000);
+		</script>
 </html>

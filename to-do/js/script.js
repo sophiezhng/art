@@ -21,7 +21,7 @@ function saveList() {
 	cookie = cookie.substring(1, cookie.length);
 	
 	console.log('Saving cookie as "' + cookie + '"');
-	$.cookie('list', cookie, { expires: 90 });
+	$.cookie('list', cookie, { expires: 365 });
 	console.log('Cookie: ' + $.cookie('list'));
 	
 }
