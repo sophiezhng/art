@@ -41,9 +41,10 @@ body {
 }
 
 .to-do {
-    overflow:auto;
+    overflow-wrap: break-word;
     white-space: normal;
 }
+
 .to-do > #text {
     display:flex;
     float: left;
