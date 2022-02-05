@@ -40,6 +40,15 @@ body {
     padding: 10px 50px !important;
 }
 
+.to-do {
+    overflow:auto;
+    white-space: normal;
+}
+.to-do > #text {
+    display:flex;
+    float: left;
+}
+
 #lollipop {
     background: url(https://i.ibb.co/F6Xx77z/f2845d2875328f409c79b93b3c324ee8.gif) no-repeat;
     position: fixed;
