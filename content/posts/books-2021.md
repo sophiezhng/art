@@ -31,3 +31,5 @@ Goal for 2021: 15 books! I may not end up reading all these books/find new books
 - [ ] "The Three-Body Problem" by Liu Cixin
 - [ ] “Animal Farm” by George Orwell
 - [ ] “Never Let Me Go” by Kazuo Ishiguro
+
+update from 2026: so much optimism from a younger me haha 
