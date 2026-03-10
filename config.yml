@@ -62,7 +62,6 @@ params:
     ShowToc: true
     # comments: false
     images: ["blog-cover.jpg"]
-    ShowShareButtons: true
 
     homeInfoParams:
         Title: "sophie zhang | the blog"
