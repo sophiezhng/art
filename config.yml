@@ -123,11 +123,6 @@ privacy:
         disabled: false
         simple: true
 
-    twitter:
-        disabled: false
-        enableDNT: true
-        simple: true
-
     instagram:
         disabled: false
         simple: true
@@ -138,6 +133,4 @@ privacy:
 
 services:
     instagram:
-        disableInlineCSS: true
-    twitter:
         disableInlineCSS: true
